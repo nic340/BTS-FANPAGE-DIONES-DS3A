@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BTS Fanpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('4b071b350380fe96bb2ab806950583e0.jpg'); 
+      background-size: cover;
+      background-position: center;
+      color: white;  
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 0;
+    }
+
+    .profile, .albums, footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    .profile {
+      padding: 40px 20px;
+    }
+
+    .profile img {
+      width: 180px;
+      height: 180px;
+      border-radius: 15px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .profile h1 {
+      font-size: 2.5rem;
+      margin: 10px 0;
+      color: white; 
+      font-weight: bold;
+    }
+
+    .profile p {
+      color: white;  
+      max-width: 600px;
+      margin: 0 auto 20px;
+      font-weight: bold;
+    }
+
+    .members {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: white;  
+      font-weight: bold;
+    }
+
+    .albums {
+      padding: 30px 20px;
+      margin: 20px;
+      border-radius: 15px;
+      }
+
+    .albums h2 {
+      margin-bottom: 20px;
+      color: white; 
+      font-weight: bold;
+    }
+
+    .album-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .album {
+      padding: 15px;
+      border-radius: 15px;
+      font-weight: bold;
+      color: white;  
+      width: 200px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .album img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .album:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    footer {
+      padding: 15px;
+      font-size: 0.9rem;
+      color: white; 
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    /* Violet heart GIFs floating */
+    .hearts {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .heart {
+      position: absolute;
+      width: 40px;
+      animation: float 10s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <!-- Violet heart GIFs -->
+  <div class="hearts">
+    <img src="purple-heart.gif" class="heart" style="left:10%; animation-delay: 0s;">
+    <img src="purple-heart.gif" class="heart" style="left:30%; animation-delay: 2s;">
+    <img src="purple-heart.gif" class="heart" style="left:50%; animation-delay: 4s;">
+    <img src="purple-heart.gif" class="heart" style="left:70%; animation-delay: 1s;">
+    <img src="purple-heart.gif" class="heart" style="left:90%; animation-delay: 3s;">
+  </div>
+
+    <h1>BTS</h1>
+    <p>
+      BTS (Bangtan Sonyeondan) is a South Korean boy band known for their music, performances, and inspiring messages. 
+      With millions of ARMY fans worldwide, they have become one of the most influential groups in the world.
+    </p>
+    <div class="members">
+      Members: RM, Jin, SUGA, j-hope, Jimin, V, Jungkook 💜
+    </div>
+  </div>
+
+  <div class="albums">
+    <h2>Albums</h2>
+    <div class="album-list">
+      <div class="album">
+        <img src="BTS_-_Map_of_the_Soul_7.png" alt="MAP OF THE SOUL: 7">
+        MAP OF THE SOUL: 7 (2020)
+      </div>
+      <div class="album">
+        <img src="BTS_-_Be_Cover.png" alt="BE">
+        BE (2020)
+      </div>
+      <div class="album">
+        <img src="BTS,_Love_Yourself_Answer,_album_cover.jpg" alt="Love Yourself: Answer">
+        Love Yourself: Answer (2018)
+      </div>
+      <div class="album">
+        <img src="tumblr_of7mnrRFmT1uutxyjo1_1280.jpg" alt="Wings">
+        Wings (2016)
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Created by: GEM NICOLE R. DIONES 💜
+  </footer>
+</body>
+</html>
